@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+l<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, sans-serif;
+            background-position: 10%;
+            margin: 0;
+            padding: 0;
+            background-image: url(https://img.freepik.com/premium-vector/abstract-blue-gradient-background-with-grainy-glowing-blue-light-modern_645557-73.jpg?semt=ais_hybrid&w=740&q=80);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            font-family: "Mitr", sans-serif;
+            font-size: 32px;
+            color: #2c3e50;
+            border-left: 5px solid #3498db;
+            padding-left: 10px;
+            text-shadow: 2px 2px 5px lightskyblue;
+        }
+
+        .profile {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .profile img {
+            width: 200px;
+            border-radius: 10px;
+            border: 3px solid #3498db;
+        }
+
+        .profile-info p {
+            margin: 6px 0;
+            font-size: 16px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            margin-left: 5px;
+        }
+
+        table th {
+            background-color: #3498db;
+            color: #ffffff;
+            padding: 10px;
+        }
+
+        table td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #eaf2ff;
+        }
+        
+        label{
+            margin-left: 5px;
+        }
+        form {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        label {display: block;}
+
+        input[type=text],select {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        input[type=date]{
+            width: 25%;
+            padding: 12px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=file]{
+            width: 40%;
+            padding: 12px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 20%;
+            background-color: lightskyblue;
+            color: white;
+            padding: 14px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: rgb(114, 174, 211);
+        }
+
+        input[type=reset] {
+            width: 20%;
+            background-color:crimson;
+            color: white;
+            padding: 14px;
+            margin: 8px 0;
+            margin-left: 5px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=reset]:hover {
+            background-color: rgb(173, 16, 47);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <h2>ประวัติส่วนตัว 📑 </h2>
+
+    <div class="profile">
+        <img src="image/images.jpg" alt="Profile Image">
+
+        <div class="profile-info">
+            <p><strong>ชื่อ-นามสกุล :</strong> นาย จักรกฤษ สัจจรักษ์</p>
+            <p><strong>ชื่อเล่น :</strong> เบสท์</p>
+            <p><strong>สาขาวิชา :</strong> เทคโนโลยีสารสนเทศและการสื่อสาร</p>
+            <p><strong>คณะ :</strong> เทคโนโลยีสารสนเทศ</p>
+            <p><strong>สถาบัน :</strong> มหาวิทยาลัยศรีปทุม วิทยาเขตชลบุรี</p>
+            <p><strong>รูป :</strong> รูปภาพ </p>
+        </div>
+    </div>
+    
+    <h2>แสดงข้อมูลนักศึกษา</h2>
+    <table border="1">
+    <tr>
+        <th>รูป</th>
+        <th>รหัสนักศึกษา</th>
+        <th>ชื่อ-นามสกุล</th> 
+        <th>ชื่อเล่น</th>
+        <th>คณะ</th> 
+    </tr>
+
+    <tr>
+        <td><img src="image/noFilter.webp" width="100" alt="Profile Image"></td>
+        <td>68705698</td>
+        <td>จักรกฤษ สัจจรักษ์</td> 
+        <td>เบสท์</td>
+        <td>เทคโนโลยีสารสนเทศ</td> 
+    </tr>
+    <tr>
+        <td><img src="image/12-23-13s.jpg" width="100" alt="Profile Image"></td>
+        <td>68703256</td>
+        <td>จิรวัฒน์ ชัยถาวรกิจ</td> 
+        <td>ต้นหลิว</td>
+        <td>เทคโนโลยีสารสนเทศ</td>  
+    </tr>
+    <tr>
+        <td><img src="image/4f24d8197dd5822ac01184e706b33b1d.jpg" width="100" alt="Profile Image"></td>
+        <td>68702319</td>
+        <td>พฤหัส เกษมะณี</td> 
+        <td>เปรม</td>
+        <td>เทคโนโลยีสารสนเทศ</td> 
+    </table>
+
+<br><h2>ลงทะเบียน</h2>
+
+<form action="">
+    <label for="fname">รหัสนักศึกษา</label>
+    <input type="text" id="fname" name="firstname" placeholder="ใส่รหัสนักศึกษา...">
+
+    <label for="fname">ชื่อ</label>
+    <input type="text" id="fname" name="firstname" placeholder="ใส่ชื่อ...">
+
+    <label for="lname">นามสกุล</label>
+    <input type="text" id="lname" name="lastname" placeholder="ใส่นามสกุล...">
+
+    <label for="lname">ชื่อเล่น</label>
+    <input type="text" id="lname" name="lastname" placeholder="ใส่ชื่อเล่น...">
+
+    <label for="lname">คณะ</label>
+    <select id="department" name=""department>
+        <option value="1">เทคโนโลยีสารสนเทศ</option>
+        <option value="2">บัญชี</option>
+        <option value="3">บริหารธุรกิจ</option>    
+    </select>
+
+    <label for="country">จังหวัด</label>
+    <select id="country" name="country">
+        <option value="CBR">ชลบุรี</option>
+        <option value="BK">กรุงเทพ</option>
+        <option value="RY">ระยอง</option>
+    </select><br><br>
+
+    <label>วันเกิด</label>
+    <input type="date" id="tdaye" name="date">
+
+    <label>รูปภาพ</label>
+    <input type="file" id="image" name="image"><br><br>
+  
+  <input type="submit" value="Submit">
+  <input type="reset" value="Cancel">
+
+</form>
+</body>
+</html>
